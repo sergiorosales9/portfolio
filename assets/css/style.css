@@ -13,13 +13,13 @@ body{
     margin: 0;
     padding: 0;
     font-family:'Lato',sans-serif;
-    overflow-x: hidden
+  
     
 }
 
 ::-webkit-scrollbar{
 
-    width: 6px;
+   display:none;
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 5px;
@@ -233,14 +233,14 @@ color: #111;
 font-family: sans-serif;
 }
 #about .main-about .about-us-info  .about-us-info-subheading{
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 500;
     color: rgb(212, 212, 212);
     font-family: sans-serif;
     width: 100%;
 }
 #about .main-about .about-us-info  .about-us-info-subheading::first-letter{
-    font-size: 1.2em;
+    font-size: 1.9em;
     font-weight: 700;
 }
 #about .about-us-intro{
@@ -318,7 +318,7 @@ font-family: sans-serif;
 
 .main-skill p {
     
-    font-size: 1em;
+    font-size: 1.8em;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     color: #000;
@@ -326,7 +326,7 @@ font-family: sans-serif;
 .main-skill h2{
 border-left: 5px solid #2ecc71;
 padding: 10px 15px;
-font-size: 2em;
+font-size: 2.4em;
 font-weight: 700;
 color: #111;
 font-family: sans-serif;
@@ -344,23 +344,23 @@ margin-bottom: 5%;
     color: rgb(0, 0, 0); /* White text color */
     border-radius: 15px;  
     overflow: hidden;
-    border: 1.5px solid #000;
+    border: 2px solid #000;
     
     font-family: 'Oswald', sans-serif;
   }
   
   .html {width: 85%; 
-    line-height: 1.2em;
+    line-height:200%;
         box-shadow: inset 0 0 2px #000;
     } /* Green */
   .css {width: 70%;
-    line-height: 1.2em;
+    line-height:200%;
      box-shadow: inset 0 0 2px #000;} /* Blue */
   .js {width: 70%; 
-    line-height: 1.2em;
+    line-height:200%;
     box-shadow: inset 0 0 2px #000;} /* Red */
   .react {width: 40%; 
-    line-height: 1.2em;
+    line-height:200%;
     box-shadow: inset 0 0 2px #000;}
 
 .html:nth-child(1){
@@ -494,48 +494,976 @@ margin-bottom: 5%;
 /*footer*/
 
 #footer{
-	padding:10px 0;
-	position: static;
-	bottom: 0;
+  height: 30%;
 	color: #fff;
-	font-family: sans-serif;
+	
 }
 #footer .logo-footer{
-	position: relative;
+    
+    font-size: 120%;
 	text-decoration: none;
 	color: #000000;
     font-family: 'Oswald', sans-serif;
-	
-	height: auto;
-	width: 100%;
-	font-size: 2.5em;
 	font-weight: 200;
 }
 #footer .btn-back{
-	position: relative;
+    margin-top: 1%;
+    width: 200px;
 	color: #fff;
 	border:1px solid #fff;
-	margin-left:10%;
-	transform: translateX(-50%);
+    font-size: 100%;
+    margin-bottom: 0;
 }
 #footer .btn-back:hover{
 	background:#fff;
 	color: #017bf5cc;
 }
 #footer .footer-credits{
-	margin-top: 0.5%;
-	font-size: 0.99em;
+	margin-top: 1%;
+	font-size: 90%;
     font-weight: 550;
     bottom: 0;
 }
 
+@media (max-width: 576px){
+    .banner{
+        background-size: cover;
+    }
+    .banner .navigation-bar{
+    position: fixed;
+    padding: 3px 0;
+    z-index: 999;
+    margin-top: 2px;
+    top:0 !important;
+    }
+    .banner .navigation-bar .logo{
+      margin-left: 10%;
+      font-size: 1em;
+      font-weight: 100;
+      
+        }
+    .banner .navigation-bar .logo a{
 
-@media (max-width : 900px) {
+    color: #fff;
+    letter-spacing: 0.5px;    
+    }
+    .banner .navigation-bar .menu-text{
+        margin-right: 5%;
+        height: 100%;
+        width: 50px;
+        margin-top: 3%;
+       
+    }
+    .banner .navigation-bar .menu-text .menu-heading{
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-top: 5px;
+        margin-right: 10px;
+        color: #2ecc71;
+    }
+    
+    .banner .navigation-bar .menu-text i{
+        font-size: 1.5em;
+    }
+    .banner .info-banner{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);    
+    }
+    
+    .banner .info-banner .info-heading-text h2{
+        line-height: 20px;
+        font-size: 3em;
+        font-weight: 600;
+    
+    }
+    .banner .info-banner .info-heading-text h1{
+       
+        font-size: 3.5em;
+        font-weight: 500;
+      
+    }
+    .banner .info-banner .buttons{
+        margin-top: 2%;
+    }
+    .banner .info-banner .buttons a{
+ 
+        font-size: 0.5em;
+        border: 2px solid #fff;
+        border-radius: 0;
+        padding: 5px 10px;
+        margin: 0 1.5%;
+    }
+   
+    .banner .info-banner .social-icons{
+        left: 0;
+        position: absolute;
+        top:150%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2em;
+      
+    }
+    .banner .info-banner .social-icons a{
+        color: #2ecc71;
+        
+  }
+    
+    
+    .banner .angle{
+        position: absolute;
+        bottom: 0;
+        border-right: none;
+        font-size: 1.3em;
+        display: flex;
+       justify-content: center;
+       height: 60px;
+       text-decoration: none;
+       cursor: pointer;
+       
+    }
+    .banner .angle h2{
+        
+        font-size: 1em;
+        margin-top: -15px;
+        margin-right: -10px;
+    }
+    .banner .angle i{
+        font-size: 1.6em;
+        margin-left: 5px;
+        color: #2ecc71;
+        margin-top: -15px;
+    }
+    .banner .nav2{
+        position: fixed;
+        background: #000;
+        color: #fff;
+        height: 100%;
+        width: 250px;
+        z-index: 9999999;
+      
+    }
+    
+
+    about .main-about .about-us-info .about-us-info-heading{
+
+        font-size: 1.5em;
+        font-weight: 500;
+       
+        }
+        #about .main-about .about-us-info  .about-us-info-subheading{
+            font-size: 1.5em;
+            font-weight: 500;
+            width:100%;
+        }
+        #about .main-about .about-us-info  .about-us-info-subheading::first-letter{
+            font-size: 1em;
+            font-weight: 700;
+        }
+      
+        #about .about-us-intro .about-us-intro-heading{
+     
+            font-weight: 500;
+            font-size: 1em;
+        
+        }
+        .main-skill {
+            margin-left: 5%;
+        }
+        
+        .main-skill p {
+            
+            font-size: 1.2em;
+        }
+        .main-skill h2{
+        border-left: 5px solid #2ecc71;
+        padding: 10px 15px;
+        font-size: 1.5em;
+        font-weight: 600;
+        }
+          .container-skill {
+            width: 100%; /* Full width */
+          }
+        .html {width: 85%; 
+            line-height:100%;
+                box-shadow: inset 0 0 2px #000;
+            } /* Green */
+          .css {width: 70%;
+            line-height:100%;
+             box-shadow: inset 0 0 2px #000;} /* Blue */
+          .js {width: 70%; 
+            line-height:100%;
+            box-shadow: inset 0 0 2px #000;} /* Red */
+          .react {width: 40%; 
+            line-height:100%;
+            box-shadow: inset 0 0 2px #000;}
+
+    #contact .contact-form input[type="text"]{
+        
+        margin-bottom:2%;
+        height: 20%;
+        width: 90%;
+        color: #fff;
+        font-size: 1em;
+        margin-top: 1%;
+        
+    }
+    #contact .contact-form input[type="email"]{
+        padding-bottom: 0;
+        margin-bottom:0%;
+        height: 20%;
+        width: 90%;
+        color: #fff;
+        font-size: 1em;
+        margin-top: 3%;
+        
+    }
+    #contact .contact-form input[type="text"]::placeholder,
+    #contact .contact-form input[type="email"]::placeholder{
+        
+        font-family: sans-serif;
+        font-size: 0.89em;
+    }
+    #contact .contact-form .subject input{
+
+        height: 20%;
+        width: 90%;
+    }
+    #contact .contact-form textarea{
+        
+       
+        padding:0;
+        height: 100%;
+        width:90%;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    
+    #contact .contact-form input[type="submit"]{
+        padding:0;
+        font-size: 1em;
+        font-weight: 550;
+        letter-spacing: 2px;
+        width: 40%;
+    }
+
+    
+    #footer .footer-credits{
+        font-size: 12px;
+        font-weight: 100;
+        margin: 0;
+    }
     #footer .btn-back{
+    font-size: 80%;
+    }
+    #footer .logo-footer{
+        font-size: 100%;
+    }
+}
+
+
+@media(min-width:576px) and (max-width: 768px)  {
+    .banner{
+        background-size: cover;
+    }
+    .banner .navigation-bar{
+    position: fixed;
+    
+    padding: 3px 0;
+    margin-top: 2px;
+    top:0% !important;
+    }
+    .banner .navigation-bar .logo{
+      margin-left: 10%;
+      font-size: 2em;
+      font-weight: 100;
+      
+        }
+    .banner .navigation-bar .logo a{
+
+    color: #fff;
+    letter-spacing: 0.5px;    
+    }
+    .banner .navigation-bar .menu-text{
+        margin-right: 5%;
+        height: 100%;
+        width: 100px;
+        margin-top: 3%;
+       
+    }
+    .banner .navigation-bar .menu-text .menu-heading{
+        font-size: 2em;
+        font-weight: 500;
+        margin-top: 0;
+        
+      
+        
+    }
+    
+    .banner .navigation-bar .menu-text i{
+        font-size: 3em;
+    }
+    
+    
+    .banner .info-banner .info-heading-text h2{
+        line-height: 50px;
+        font-size: 6em;
+        font-weight: 600;
+    
+    }
+    .banner .info-banner .info-heading-text h1{
+       
+        font-size: 6.5em;
+        font-weight: 500;
+      
+    }
+    .banner .info-banner .buttons{
+        margin-top: 2%;
+    }
+    .banner .info-banner .buttons a{
+ 
+        font-size: 1.5em;
+        border: 2px solid #fff;
+        border-radius: 0;
+        padding: 5px 10px;
+        margin: 0 1.5%;
+    }
+   
+    .banner .info-banner .social-icons{
+       
+        position: relative;
+        right: 50px;
+        display: flex !important;
+        flex-direction: column!important;
+        justify-content: space-between !important;;
+        font-size: 3em;
+              
+    }
+    .banner .info-banner .social-icons a{
+        color: #2ecc71;
+        
+  }
+    
+    
+    .banner .angle{
+        position: absolute;
+        bottom: 0;
+        border-right: none;
+        font-size: 2em;
+        display: flex;
+       justify-content: center;
+       height: 100px;
+       text-decoration: none;
+       cursor: pointer;
+       
+    }
+    .banner .angle h2{
+        
+        font-size: 1em;
+        margin-top: -15px;
+        margin-right: -10px;
+    }
+    .banner .angle i{
+        font-size: 1.6em;
+        margin-left: 5px;
+        color: #2ecc71;
+        margin-top: -15px;
+    }
+    .banner .nav2{
+        position: fixed;
+        background: #000;
+        color: #fff;
+        height: 100%;
+        width: 250px;
+        z-index: 9999999;
+      
+    }
+    #about .main-about{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 0;
+    }
+    #about .main-about .about-us-info{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    #about .main-about .about-us-info .about-us-info-heading h1{
+    border-left: 5px solid #2ecc71;
+    padding: 10px 15px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #111;
+    font-family: sans-serif;
+    margin-left: 0;
+    }
+    #about .main-about .about-us-info .about-us-info-heading h1{
+        margin-left: 0;
+    }
+    #about .main-about .about-us-info  .about-us-info-subheading{
+        font-size: 1.5em;
+        font-weight: 500;
+        color: rgb(212, 212, 212);
+        font-family: sans-serif;
+        width: 90%;
+    }
+    #about .main-about .about-us-info  .about-us-info-subheading::first-letter{
+        font-size: 1.9em;
+        font-weight: 700;
+    }
+    #about .about-us-intro{
+        margin-top: 5%;
+        position: relative;
+    }
+    #about .about-us-intro .about-us-intro-heading{
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+        color:rgb(212, 212, 212);
+    }
+    #about .about-us-intro:hover .about-us-intro-heading{
+        color: #000;
+    }
+    #about .about-us-intro .image-intro-thumbnail{
+        position: relative;
+        height: 180px;
+        width: 200px;
+        margin-top: 50%;
+        margin-right: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #about .about-us-intro .image-intro-thumbnail img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    #about .about-us-intro .image-intro-thumbnail::before{
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: #017bf5;
+        z-index: -3;
+        transition: 0.2s ease-in-out;
+    }
+    
+    
+    #about .about-us-intro .image-intro-thumbnail:hover::before{
+        top:-10px;
+        left: -10px;
+    }
+    #about .about-us-intro .image-intro-thumbnail::after{
+        position: absolute;
+        top:0;
+        left: 0;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.103);
+        z-index: 0;
+    }
+    #about .about-us-intro .image-intro-thumbnail i{
         position: relative;
         color: #fff;
-        border:1px solid #fff;
-        margin-left:20%;
-        transform: translateX(-50%);
+        font-size: 1.2em;
+        z-index: 1;
     }
+    
+    .main-skill {
+        width: 100%; /* Full width */
+        margin-top: 5%;
+        margin-left: none;
+        margin-left:2%;
+    }
+    
+    .main-skill p {
+        margin-left:5px;
+        font-size: 1.8em;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        color: #000;
+    }
+    .main-skill h2{
+    border-left: 5px solid #2ecc71;
+    padding: 10px 15px;
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #111;
+    font-family: sans-serif;
+    margin-bottom: 5%;
+    }
+      .container-skill {
+        width: 80%; /* Full width */
+        background-color: rgba(29, 26, 26, 0.5); /* Grey background */
+        border-radius: 15px;
+        box-shadow: inset 0 0 10px #000;
+      }
+      
+      .skills {
+        text-align: right; /* Right-align text */
+        color: rgb(0, 0, 0); /* White text color */
+        border-radius: 15px;  
+        overflow: hidden;
+        border: 2px solid #000;
+        
+        font-family: 'Oswald', sans-serif;
+      }
+      
+      .html {width: 85%; 
+        line-height:150%;
+            box-shadow: inset 0 0 2px #000;
+        } /* Green */
+      .css {width: 70%;
+        line-height:150%;
+         box-shadow: inset 0 0 2px #000;} /* Blue */
+      .js {width: 70%; 
+        line-height:150%;
+        box-shadow: inset 0 0 2px #000;} /* Red */
+      .react {width: 40%; 
+        line-height:150%;
+        box-shadow: inset 0 0 2px #000;}
+    
+    .html:nth-child(1){
+        background: linear-gradient(45deg , #3bc0ff , #25ad03);
+    }
+    .js:nth-child(1){
+        background: linear-gradient(45deg , #ebe71e , #b80101);
+    }
+    .react:nth-child(1){
+        background: linear-gradient(45deg , #72ff3b , #0011ff);
+    }
+    .css:nth-child(1){
+        background: linear-gradient(45deg , #ff3bde , #280331);
+    }
+    
+
+    #contact .contact-form input[type="text"]{
+        
+        margin-bottom:2%;
+        height: 20%;
+        width: 90%;
+        color: #fff;
+        font-size: 1em;
+        margin-top: 1%;
+        
+    }
+    #contact .contact-form input[type="email"]{
+        padding-bottom: 0;
+        margin-bottom:0%;
+        height: 20%;
+        width: 90%;
+        color: #fff;
+        font-size: 1em;
+        margin-top: 3%;
+        
+    }
+    #contact .contact-form input[type="text"]::placeholder,
+    #contact .contact-form input[type="email"]::placeholder{
+        
+        font-family: sans-serif;
+        font-size: 0.89em;
+    }
+    #contact .contact-form .subject input{
+
+        height: 20%;
+        width: 90%;
+    }
+    #contact .contact-form textarea{
+        
+       
+        padding:0;
+        height: 100%;
+        width:90%;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    
+    #contact .contact-form input[type="submit"]{
+        padding:0;
+        font-size: 1em;
+        font-weight: 550;
+        letter-spacing: 2px;
+        width: 40%;
+    }
+
+    
+    #footer .footer-credits{
+        font-size: 12px;
+        font-weight: 100;
+        margin: 0;
+    }
+    #footer .btn-back{
+        width: 180px;
+    font-size: 80%;
+    margin-top: 0;
+    }
+    #footer .logo-footer{
+        font-size: 100%;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+      
+        .banner{
+            background-size: cover;
+        }
+        .banner .navigation-bar{
+        position: fixed;
+        
+        padding: 3px 0;
+        margin-top: 2px;
+        top:0% !important;
+        }
+        .banner .navigation-bar .logo{
+          margin-left: 10%;
+          font-size: 2em;
+          font-weight: 100;
+          
+            }
+        .banner .navigation-bar .logo a{
+    
+        color: #fff;
+        letter-spacing: 0.5px;    
+        }
+        .banner .navigation-bar .menu-text{
+            margin-right: 5%;
+            height: 100%;
+            width: 100px;
+            margin-top: 3%;
+           
+        }
+        .banner .navigation-bar .menu-text .menu-heading{
+            font-size: 2em;
+            font-weight: 500;
+            margin-top: 0;
+            
+          
+            
+        }
+        
+        .banner .navigation-bar .menu-text i{
+            font-size: 3em;
+        }
+        
+        
+        .banner .info-banner .info-heading-text h2{
+            line-height: 50px;
+            font-size: 6em;
+            font-weight: 600;
+        
+        }
+        .banner .info-banner .info-heading-text h1{
+           
+            font-size: 6.5em;
+            font-weight: 500;
+          
+        }
+        .banner .info-banner .buttons{
+            margin-top: 2%;
+        }
+        .banner .info-banner .buttons a{
+     
+            font-size: 1.5em;
+            border: 2px solid #fff;
+            border-radius: 0;
+            padding: 5px 10px;
+            margin: 0 1.5%;
+        }
+       
+        .banner .info-banner .social-icons{
+           
+            position: relative;
+            right: 50px;
+            display: flex !important;
+            flex-direction: column!important;
+            justify-content: space-between !important;;
+            font-size: 3em;
+                  
+        }
+        .banner .info-banner .social-icons a{
+            color: #2ecc71;
+            
+      }
+        
+        
+        .banner .angle{
+            position: absolute;
+            bottom: 0;
+            border-right: none;
+            font-size: 2em;
+            display: flex;
+           justify-content: center;
+           height: 100px;
+           text-decoration: none;
+           cursor: pointer;
+           
+        }
+        .banner .angle h2{
+            
+            font-size: 1em;
+            margin-top: -15px;
+            margin-right: -10px;
+        }
+        .banner .angle i{
+            font-size: 1.6em;
+            margin-left: 5px;
+            color: #2ecc71;
+            margin-top: -15px;
+        }
+        .banner .nav2{
+            position: fixed;
+            background: #000;
+            color: #fff;
+            height: 100%;
+            width: 250px;
+            z-index: 9999999;
+          
+        }
+        #about .main-about{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            margin-top: 5%;
+            margin-left: 0;
+        }
+        #about .main-about .about-us-info{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        #about .main-about .about-us-info .about-us-info-heading h1{
+        border-left: 5px solid #2ecc71;
+        padding: 10px 15px;
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #111;
+        font-family: sans-serif;
+        margin-left: 0;
+        }
+        #about .main-about .about-us-info .about-us-info-heading h1{
+            margin-left: 0;
+        }
+        #about .main-about .about-us-info  .about-us-info-subheading{
+            font-size: 1.5em;
+            font-weight: 500;
+            color: rgb(212, 212, 212);
+            font-family: sans-serif;
+            width: 90%;
+        }
+        #about .main-about .about-us-info  .about-us-info-subheading::first-letter{
+            font-size: 1.9em;
+            font-weight: 700;
+        }
+        #about .about-us-intro{
+            margin-top: 5%;
+            position: relative;
+        }
+        #about .about-us-intro .about-us-intro-heading{
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 1.5em;
+            color:rgb(212, 212, 212);
+        }
+        #about .about-us-intro:hover .about-us-intro-heading{
+            color: #000;
+        }
+        #about .about-us-intro .image-intro-thumbnail{
+            position: relative;
+            height: 180px;
+            width: 200px;
+            margin-top: 50%;
+            margin-right: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #about .about-us-intro .image-intro-thumbnail img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        #about .about-us-intro .image-intro-thumbnail::before{
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: #017bf5;
+            z-index: -3;
+            transition: 0.2s ease-in-out;
+        }
+        
+        
+        #about .about-us-intro .image-intro-thumbnail:hover::before{
+            top:-10px;
+            left: -10px;
+        }
+        #about .about-us-intro .image-intro-thumbnail::after{
+            position: absolute;
+            top:0;
+            left: 0;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.103);
+            z-index: 0;
+        }
+        #about .about-us-intro .image-intro-thumbnail i{
+            position: relative;
+            color: #fff;
+            font-size: 1.2em;
+            z-index: 1;
+        }
+        
+        .main-skill {
+            width: 100%; /* Full width */
+            margin-top: 5%;
+            margin-left: none;
+            margin-left:2%;
+        }
+        
+        .main-skill p {
+            margin-left:5px;
+            font-size: 1.8em;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+            color: #000;
+        }
+        .main-skill h2{
+        border-left: 5px solid #2ecc71;
+        padding: 10px 15px;
+        font-size: 2.4em;
+        font-weight: 700;
+        color: #111;
+        font-family: sans-serif;
+        margin-bottom: 5%;
+        }
+          .container-skill {
+            width: 80%; /* Full width */
+            background-color: rgba(29, 26, 26, 0.5); /* Grey background */
+            border-radius: 15px;
+            box-shadow: inset 0 0 10px #000;
+          }
+          
+          .skills {
+            text-align: right; /* Right-align text */
+            color: rgb(0, 0, 0); /* White text color */
+            border-radius: 15px;  
+            overflow: hidden;
+            border: 2px solid #000;
+            
+            font-family: 'Oswald', sans-serif;
+          }
+          
+          .html {width: 85%; 
+            line-height:150%;
+                box-shadow: inset 0 0 2px #000;
+            } /* Green */
+          .css {width: 70%;
+            line-height:150%;
+             box-shadow: inset 0 0 2px #000;} /* Blue */
+          .js {width: 70%; 
+            line-height:150%;
+            box-shadow: inset 0 0 2px #000;} /* Red */
+          .react {width: 40%; 
+            line-height:150%;
+            box-shadow: inset 0 0 2px #000;}
+        
+        .html:nth-child(1){
+            background: linear-gradient(45deg , #3bc0ff , #25ad03);
+        }
+        .js:nth-child(1){
+            background: linear-gradient(45deg , #ebe71e , #b80101);
+        }
+        .react:nth-child(1){
+            background: linear-gradient(45deg , #72ff3b , #0011ff);
+        }
+        .css:nth-child(1){
+            background: linear-gradient(45deg , #ff3bde , #280331);
+        }
+        
+    
+        #contact .contact-form input[type="text"]{
+            
+            margin-bottom:2%;
+            height: 20%;
+            width: 90%;
+            color: #fff;
+            font-size: 1em;
+            margin-top: 1%;
+            
+        }
+        #contact .contact-form input[type="email"]{
+            padding-bottom: 0;
+            margin-bottom:0%;
+            height: 20%;
+            width: 90%;
+            color: #fff;
+            font-size: 1em;
+            margin-top: 3%;
+            
+        }
+        #contact .contact-form input[type="text"]::placeholder,
+        #contact .contact-form input[type="email"]::placeholder{
+            
+            font-family: sans-serif;
+            font-size: 0.89em;
+        }
+        #contact .contact-form .subject input{
+    
+            height: 20%;
+            width: 90%;
+        }
+        #contact .contact-form textarea{
+            
+           
+            padding:0;
+            height: 100%;
+            width:90%;
+            font-weight: 100;
+            font-size: 1em;
+        }
+        
+        #contact .contact-form input[type="submit"]{
+            padding:0;
+            font-size: 1em;
+            font-weight: 550;
+            letter-spacing: 2px;
+            width: 40%;
+        }
+    
+        
+        #footer .footer-credits{
+            font-size: 12px;
+            font-weight: 100;
+            margin: 0;
+        }
+        #footer .btn-back{
+            width: 180px;
+        font-size: 80%;
+        margin-top: 0;
+        }
+        #footer .logo-footer{
+            font-size: 100%;
+        }
+    
+    
 }
